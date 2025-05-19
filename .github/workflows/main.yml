@@ -34,7 +34,7 @@ jobs:
           FULL_URI=$ECR_URI:$SERVICE
           
           echo "🔨 Building $SERVICE..."
-          docker build -t $IMAGE_TAG ./microservices/$SERVICE
+          docker build -t $IMAGE_TAG ./Microservices/$SERVICE
 
           echo "🏷️ Tagging $SERVICE as $FULL_URI"
           docker tag $IMAGE_TAG $FULL_URI
