@@ -3,6 +3,7 @@ name: Build and Push Microservices to ECR
 on:
   push:
     branches: [main]
+    workflow_dispatch:
 
 jobs:
   deploy:
